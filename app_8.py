@@ -7,6 +7,7 @@ import plotly.graph_objects as go
 
 
 st.set_page_config(layout="wide")
+st.set_theme('dark')
 
 
 # Load Data
