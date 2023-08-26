@@ -7,7 +7,26 @@ import plotly.graph_objects as go
 
 
 st.set_page_config(layout="wide")
-st.set_theme('dark')
+
+#default theme as dark
+custom_css = """
+<style>
+body {
+    background-color: #1f2937; /* Dark background color */
+    color: #ffffff; /* Light text color */
+}
+
+.sidebar {
+    background-color: #111827; /* Dark sidebar background color */
+    color: #ffffff; /* Light text color for sidebar */
+}
+
+/* Additional styling as needed */
+</style>
+"""
+st.markdown(custom_css, unsafe_allow_html=True)
+
+
 
 
 # Load Data
